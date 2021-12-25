@@ -11,6 +11,8 @@ set TOMCAT_HOME_BIN="%TOMCAT_HOME%\bin"
 @REM Open a new tab with the default profile in the current window
 @REM wt -w 0 nt --title console -d %TOMCAT_HOME_BIN% cmd /k catalina run
 
+D:
 cd %TOMCAT_HOME_BIN%
 .\startup.bat
+F:
 cd %CURRENT_DIR%

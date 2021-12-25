@@ -3,8 +3,10 @@ set TOMCAT_HOME="D:\ProgramFiles2\Tomcat\apache-tomcat-8.0.50"
 @REM 保存当前目录
 set CURRENT_DIR=%cd%
 
+D:
 cd "%TOMCAT_HOME%\bin\"
 
 call .\shutdown.bat
 
+F:
 cd %CURRENT_DIR%
