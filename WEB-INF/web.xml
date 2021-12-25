@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Hello, World Application</display-name>
+    <description>
+	This is a simple web application with a source code organization
+	based on the recommendations of the Application Developer's Guide.
+    </description>
+
+    <welcome-file-list>
+	    <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>about.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- ex11 -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>pkg.ex11.service.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/service/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
