@@ -2,6 +2,19 @@
 基于servlet+jsp+mysql做的一个简易的购物车功能
 ## 特性
 - 基于VSCode环境
+## 使用/二次开发
+- 导入并配置模板————[Crazyokd/JW_VSC-Template](##参考)
+- 执行[cart.sql](cart.sql)文件
+- 修改[JdbcUtils.java](pkg/ex11/utils/JdbcUtils.java)文件中有关数据库的配置
+## 使用到的lib
+- c3p0-0.9.5.1.jar
+- commons-dbutils-1.6.jar
+- commons-fileupload-1.3.1.jar
+- commons-io-2.4.jar
+- jstl.jar
+- mchange-commons-java-0.2.10.jar
+- mysql-connector-java-5.1.26-bin.jar
+- standard.jar
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
