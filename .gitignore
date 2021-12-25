@@ -1,0 +1,10 @@
+# VSCode
+.vscode/
+
+# Template
+config/
+
+# Java
+classes/
+*.class
+lib/
