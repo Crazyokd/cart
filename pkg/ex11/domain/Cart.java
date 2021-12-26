@@ -7,6 +7,17 @@ public class Cart {
 	private Map<Integer, CartItem> map = new HashMap<Integer, CartItem>();
 	private double price;
 	
+	//删除一本书籍
+	public void delete(int book_id){
+		CartItem item = map.get(book_id);
+		if(item.getQuantity() == 1){
+			map.remove(book_id);
+		}else{
+			item.setQuantity(item.getQuantity() - 1);
+		}
+	}
+
+	//添加一本书籍
 	public void add(Book book){
 		CartItem item = map.get(book.getId());
 		if(item == null){
@@ -16,6 +27,13 @@ public class Cart {
 			map.put(book.getId(), item);
 		}else{
 			item.setQuantity(item.getQuantity() + 1);
+		}
+	}
+	
+	// 添加多本书籍
+	public void add(Book book,int quantity){
+		while(quantity-- > 0){
+			add(book);
 		}
 	}
 	
