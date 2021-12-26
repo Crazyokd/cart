@@ -61,4 +61,13 @@
         <servlet-name>LoginOutServlet</servlet-name>
         <url-pattern>/service/loginoutservlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CancelServlet</servlet-name>
+        <servlet-class>pkg.ex11.service.CancelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelServlet</servlet-name>
+        <url-pattern>/service/cancelservlet</url-pattern>
+    </servlet-mapping>
 </web-app>
