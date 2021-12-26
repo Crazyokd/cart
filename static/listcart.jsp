@@ -26,7 +26,7 @@
 	    		<td>${me.value.quantity }</td>
 	    		<td>${me.value.price }</td>
 	    		<td>
-	    			<a href="#">删除</a>
+	    			<a href="${pageContext.request.contextPath}/service/cancelservlet?bookid=${me.value.book.id}">删除</a>
 	    		</td>
     		</tr>
     	</c:forEach>
@@ -36,7 +36,7 @@
     		<td colspan="5">${cart.price }</td>
     	</tr>
 	</table>
-	<a href="${pageContext.request.contextPath }/service/OrderServlet">购买</a>
+	<a href="#">购买</a>
 	</c:if>
    </body>
 </html>
