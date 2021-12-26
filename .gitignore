@@ -8,3 +8,6 @@ config/
 classes/
 *.class
 lib/
+
+# image
+images/
