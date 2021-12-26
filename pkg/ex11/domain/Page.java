@@ -4,39 +4,25 @@ import java.util.List;
 
 public class Page {
 	
-	private int totalpage; //记住总页数
+	private int totalpage; 
 	private int pagesize = 3; //页面大小
 	private int totalrecord; //总记录数
-	private int pagenum; //记住当前页
-	private List list; //记住页面数据
+	private int pagenum;	//查询的页码
+	private List<Book> list; 
 	private int startpage; //起始页号
 	private int endpage;
-	private int startindex; //记住用户想看的 页的数据从哪个地方开始取
+	private int startindex; 
 	
 	public Page(int pagenum, int totalrecord){
 		this.pagenum = pagenum;
 		this.totalrecord = totalrecord;
-		//算出总页数
-		this.totalpage = (this.totalrecord + this.pagesize - 1) / this.pagesize;
-		//算出用户想看的页的数据从数据库哪个地方开始取
+		//总页数
+		this.totalpage = 1 + (this.totalrecord - 1) / this.pagesize;
+		//
 		this.startindex = (this.pagenum - 1) * this.pagesize;
 		
-		if(this.totalpage <= 3){
-			this.startpage = 1;
-			this.endpage = this.totalpage;
-		}else{
-			this.startpage = pagenum - 1;
-			this.endpage = pagenum + 1;
-			
-			if(this.startpage < 1){
-				this.startpage = 1;
-				this.endpage = 3;
-			}
-			if(this.endpage > this.totalpage){
-				this.endpage = this.totalpage;
-				this.startpage = this.totalpage - 2;
-			}
-		}
+		this.startpage = 1;
+		this.endpage = this.totalpage;
 	}
 
 	public int getTotalpage() {
@@ -71,11 +57,11 @@ public class Page {
 		this.pagenum = pagenum;
 	}
 
-	public List getList() {
+	public List<Book> getList() {
 		return list;
 	}
 
-	public void setList(List list) {
+	public void setList(List<Book> list) {
 		this.list = list;
 	}
 
@@ -103,4 +89,3 @@ public class Page {
 		this.startindex = startindex;
 	}
 }
-
