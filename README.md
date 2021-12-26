@@ -14,6 +14,14 @@
 - mchange-commons-java-0.2.10.jar
 - mysql-connector-java-5.1.26-bin.jar
 - standard.jar
+## TODO
+- [ ] 核查依赖倒转
+- [ ] 客户端添加书籍
+- [ ] filter
+- [ ] 购买书籍采用Session而非数据库
+- [ ] 清空购物车
+- [ ] 注册检查
+- [ ] 登录与注册操作后的反馈
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
