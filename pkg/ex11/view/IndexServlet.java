@@ -30,17 +30,6 @@ public class IndexServlet extends HttpServlet {
 		
 		request.getRequestDispatcher("/static/body.jsp").forward(request, response);
 	}
-	
-	// public void listBookWithCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-	// 	BusinessServiceImpl service = new BusinessServiceImpl();
-	// 	String category_id = request.getParameter("category_id");
-	// 	List<Category> categories = service.getAllCategory();
-	// 	request.setAttribute("categories", categories);
-	// 	String pagenum = request.getParameter("pagenum");
-	// 	Page page = service.getBookPageData(pagenum, category_id);
-	// 	request.setAttribute("page", page);
-	// 	request.getRequestDispatcher("/client/body.jsp").forward(request, response);
-	// }
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

@@ -19,19 +19,20 @@
     					<div id="bookinfo" style="float:left; text-align:left;">
     						<ul>
     							<li>${book.name }</li>
+								<li>ID：${book.id}</li>
     							<li>作者：${book.author }</li>
     							<li>售价：${book.price }</li>
-								<li>${book.image}</li>
+								<li>描述：${book.description} </li>
     							<li>
     								<a href="${pageContext.request.contextPath }/service/buyservlet?bookid=${book.id}">加入购物车</a>
     							</li>
     						</ul>
     					</div>
     				</div>
-    				<div style="clear:both"></div><!-- 做div浮动后，为了不影响后续页面的显示，在这里清楚浮动效果 -->
+    				<div style="clear:both"></div><!-- 清除浮动效果 -->
     			</c:forEach>
     		</div>
-    		<div style="clear:both"></div><!-- 做div浮动后，为了不影响后续页面的显示，在这里清楚浮动效果 -->
+    		<div style="clear:both"></div><!-- 清除浮动效果 -->
     		<div id="page" style="margin-top:20px; text-align:center;">
     			当前第[${page.pagenum }]页 &nbsp;&nbsp;
 			    <c:forEach var="pagenum" begin="${page.startpage }" end="${page.endpage }">

@@ -7,7 +7,7 @@
   </head>
   
   <frameset rows="17%,*">
-  	<frame src="${pageContext.request.contextPath}/static/login.jsp" name="head">
+  	<frame src="${pageContext.request.contextPath}/static/head.jsp" name="head">
   	<frame src="${pageContext.request.contextPath }/indexservlet?method=getAll" name="body">
   </frameset>
 
