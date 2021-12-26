@@ -15,7 +15,6 @@ public class RegisterServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("进入doGet方法");
 		try{
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
@@ -24,7 +23,6 @@ public class RegisterServlet extends HttpServlet {
 			
 			User user = new User();
 			user.setEmail(email);
-			// user.setId(WebUtils.makeID());
 			user.setPassword(password);
 			user.setPhone(phone);
 			user.setUsername(username);
@@ -32,8 +30,7 @@ public class RegisterServlet extends HttpServlet {
 			BusinessServiceImpl service = new BusinessServiceImpl();
 			service.registerUser(user);
 			request.setAttribute("message", "注册成功");
-			request.getRequestDispatcher("/static/message.jsp").forward(request, response);//这里要跳转到首页，并且显示欢迎您，，，待修改
-			
+			request.getRequestDispatcher("/indexservlet?method=getAll").forward(request, response);
 		}catch(Exception e){
 			e.printStackTrace();
 			request.setAttribute("message", "注册失败");

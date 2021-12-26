@@ -12,7 +12,6 @@
     	&nbsp; 密码： <input type="password" name="password"><br/>
     	&nbsp; 电话： <input type="text" name="phone"><br/>
         &nbsp; 邮箱： <input type="text" name="email"><br/>
-    	 <%-- 住址： <input type="text" name="address"><br/> --%>
     	<input type="submit" value="注册">
     </form>
   </body>
