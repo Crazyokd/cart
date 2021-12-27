@@ -29,16 +29,18 @@ public class BusinessServiceImpl implements BusinessService {
 	}
 	
 	//获得分页数据
-	public Page getBookPageData(String pagenum){
-		int totalrecord = bookDao.getTotalRecord();
+	public Page getBookPageData(String pagenum ,boolean isQuery){
 		Page page = null;
-		if(pagenum == null){
-			page = new Page(1,totalrecord);
-		}else{
-			page = new Page(Integer.parseInt(pagenum), totalrecord);
+		if(isQuery){
+			int totalrecord = bookDao.getTotalRecord();
+			if(pagenum == null){
+				page = new Page(1,totalrecord);
+			}else{
+				page = new Page(Integer.parseInt(pagenum), totalrecord);
+			}
+			List<Book> list = bookDao.getPageData(page.getStartindex(), page.getPagesize());
+			page.setList(list);
 		}
-		List<Book> list = bookDao.getPageData(page.getStartindex(), page.getPagesize());
-		page.setList(list);
 		return page;
 	}
 

@@ -11,7 +11,7 @@
 
     	<div id="bookandpage" style="float:left; margin-left:30px;">   		
     		<div id="books">
-    			<c:forEach var="book" items="${page.list }">
+    			<c:forEach var="book" items="${pagenum == null || pagenum == 1 ? sessionScope.indexPage : page.list}">
     				<div id="book" style="height:150; margin-top:20px;">
     					<div id="image" style="float:left;">
     						<img src="${pageContext.request.contextPath }/images/${book.image}" height=150 width=100>

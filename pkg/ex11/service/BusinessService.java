@@ -11,7 +11,7 @@ public interface BusinessService {
 
 	public Book findBook(String id);
 	
-	public Page getBookPageData(String pagenum);
+	public Page getBookPageData(String pagenum, boolean isQuery);
 
 	public void buyBook(Cart cart, Book book);
 
