@@ -11,3 +11,7 @@ lib/
 
 # image
 images/
+
+# test
+pkg/ex11/test/
+test.html
