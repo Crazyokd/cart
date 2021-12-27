@@ -36,7 +36,7 @@
     		<td colspan="5">${cart.price }</td>
     	</tr>
 	</table>
-	<a href="#">购买</a>
+	<a href="${pageContext.request.contextPath}/service/clearcartservlet">清空购物车</a>
 	</c:if>
    </body>
 </html>

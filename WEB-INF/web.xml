@@ -84,6 +84,15 @@
         <url-pattern>/service/cancelservlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ClearCartServlet</servlet-name>
+        <servlet-class>pkg.ex11.service.ClearCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClearCartServlet</servlet-name>
+        <url-pattern>/service/clearcartservlet</url-pattern>
+    </servlet-mapping>
+
 
 
     <!-- test -->
