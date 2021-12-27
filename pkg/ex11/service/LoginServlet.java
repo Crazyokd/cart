@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		BusinessServiceImpl service = new BusinessServiceImpl();
+		BusinessService service = new BusinessServiceImpl();
 		User user = service.loginUser(username, password);
 		if(user == null){
 			request.setAttribute("message", "用户名或密码不正确");

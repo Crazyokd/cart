@@ -27,7 +27,7 @@ public class RegisterServlet extends HttpServlet {
 			user.setPhone(phone);
 			user.setUsername(username);
 			
-			BusinessServiceImpl service = new BusinessServiceImpl();
+			BusinessService service = new BusinessServiceImpl();
 			service.registerUser(user);
 			request.setAttribute("message", "注册成功");
 			request.getRequestDispatcher("/indexservlet?method=getAll").forward(request, response);
