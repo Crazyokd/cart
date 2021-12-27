@@ -22,11 +22,11 @@ public class JdbcUtils {
 		ds.setUser("root");
 		ds.setPassword("011010");
 		ds.setAcquireIncrement(5);
-		ds.setInitialPoolSize(10);
-		ds.setMinPoolSize(5);
-		ds.setMaxPoolSize(20);
-		ds.setMaxStatements(0);
-		ds.setMaxStatementsPerConnection(5);
+		ds.setInitialPoolSize(5);
+		ds.setMinPoolSize(3);
+		ds.setMaxPoolSize(100);
+		ds.setMaxStatements(20);
+		ds.setMaxStatementsPerConnection(20);
 	}
 	
 	public static DataSource getDataSource(){
