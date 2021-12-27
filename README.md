@@ -20,10 +20,11 @@
 - [x] filter
 - [ ] 购买书籍采用Session而非数据库
 - [x] 清空购物车
-- [ ] 注册检查
+- [x] 注册检查
 - [ ] 登录与注册操作后的反馈——x秒后跳转
 - [ ] 直接关闭服务器后的处理——利用filter的destroy方法
-- [ ] 优化分页查询
+- [x] 优化分页查询——第一页存入session，避免反复从数据库查"固定数据"
+- [ ] 使用filter处理关于购物车的请求
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
