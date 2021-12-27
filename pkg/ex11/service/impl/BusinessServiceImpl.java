@@ -77,4 +77,8 @@ public class BusinessServiceImpl implements BusinessService {
 		}
 		return cart;
 	}
+
+	public boolean isRegister(String username){
+		return userDao.search(username) != null;
+	}
 }

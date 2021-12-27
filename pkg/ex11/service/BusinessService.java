@@ -26,4 +26,6 @@ public interface BusinessService {
 	public void writeCart(Cart cart, String user_id);
 
 	public Cart readCart(String user_id);
+
+	public boolean isRegister(String username);
 }
