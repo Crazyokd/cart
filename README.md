@@ -15,14 +15,14 @@
 - mysql-connector-java-5.1.26-bin.jar
 - standard.jar
 ## TODO
-- [ ] 核查依赖倒转
+- [x] 核查依赖倒转
 - [ ] 客户端添加书籍
 - [x] filter
 - [ ] 购买书籍采用Session而非数据库
 - [x] 清空购物车
 - [ ] 注册检查
-- [ ] 登录与注册操作后的反馈
-- [ ] 直接关闭服务器后的处理——利用filter
+- [ ] 登录与注册操作后的反馈——x秒后跳转
+- [ ] 直接关闭服务器后的处理——利用filter的destroy方法
 - [ ] 优化分页查询
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
