@@ -24,7 +24,7 @@
     							<li>售价：${book.price }</li>
 								<li>描述：${book.description} </li>
     							<li>
-    								<a href="${pageContext.request.contextPath }/service/buyservlet?bookid=${book.id}">加入购物车</a>
+    								<a href="${pageContext.request.contextPath }/service/buyservlet?bookid=${book.id}&bookname=${book.name}&bookauthor=${book.author}&bookprice=${book.price}&bookimage=${book.image}&bookdescription=${book.description}">加入购物车</a>
     							</li>
     						</ul>
     					</div>

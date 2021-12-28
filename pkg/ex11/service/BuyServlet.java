@@ -16,9 +16,10 @@ public class BuyServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try{
-			String bookid = request.getParameter("bookid");
+			Book book = new Book(Integer.parseInt(request.getParameter("bookid")), request.getParameter("bookname"), 
+				request.getParameter("bookauthor"), Double.parseDouble(request.getParameter("bookprice")), request.getParameter("image"), 
+				request.getParameter("bookdescription"));
 			BusinessService service = new BusinessServiceImpl();
-			Book book = service.findBook(bookid);
 			Cart cart = (Cart) request.getSession().getAttribute("cart");
 			if(cart == null){
 				cart = new Cart();
