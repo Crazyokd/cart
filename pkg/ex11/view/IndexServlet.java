@@ -33,10 +33,12 @@ public class IndexServlet extends HttpServlet {
 		Page page = service.getBookPageData(pagenum, isQuery);
 		if(page !=  null){
 			if(pagenum == null || pagenum.equals("1")){
-				session.setAttribute("indexPage", page.getList());
+				session.setAttribute("indexPage", page);
 			}else{
 				request.setAttribute("page", page);
 			}
+		}else{
+			request.setAttribute("page", session.getAttribute("indexPage"));
 		}
 		request.getRequestDispatcher("/static/body.jsp").forward(request, response);
 	}
