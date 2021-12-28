@@ -34,9 +34,8 @@ public class IndexServlet extends HttpServlet {
 		if(page !=  null){
 			if(pagenum == null || pagenum.equals("1")){
 				session.setAttribute("indexPage", page);
-			}else{
-				request.setAttribute("page", page);
 			}
+			request.setAttribute("page", page);
 		}else{
 			request.setAttribute("page", session.getAttribute("indexPage"));
 		}
