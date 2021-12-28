@@ -17,14 +17,16 @@
 ## TODO
 - [x] 核查依赖倒转
 - [ ] 客户端添加书籍
-- [x] filter
-- [ ] 购买书籍采用Session而非数据库
+- [x] 使用filter处理中文乱码
+- [x] 购买书籍采用Parameter而非数据库
 - [x] 清空购物车
 - [x] 注册检查
-- [ ] 登录与注册操作后的反馈——x秒后跳转
-- [ ] 直接关闭服务器后的处理——利用filter的destroy方法
+- [x] 登录与注册操作后的反馈——x秒后跳转
+- [ ] 直接关闭服务器后的处理——利用destroy方法
 - [x] 优化分页查询——第一页存入session，避免反复从数据库查"固定数据"
+- [x] 修复由于优化分页查询后产生的bug
 - [ ] 使用filter处理关于购物车的请求
+- [ ] 通过监听器实现当Session被销毁时，将购物车数据写入数据库。
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
