@@ -6,7 +6,7 @@
     <title>前台首页</title>
   </head>
   
-  <frameset rows="17%,*">
+  <frameset rows="15%,*">
   	<frame src="${pageContext.request.contextPath}/static/head.jsp" name="head">
   	<frame src="${pageContext.request.contextPath }/indexservlet?method=getAll" name="body">
   </frameset>
