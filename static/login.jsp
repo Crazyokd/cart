@@ -16,9 +16,10 @@
     </div> --%>
     <div style>
     	<c:if test="${user == null }"> 
+      <br/>
 	    <form action="${pageContext.request.contextPath }/service/loginservlet" method="post">
 	    	<div>用户名：<input type="text" name="username" style="width:60px;"></div>
-	    	<div> &nbsp;密码：&nbsp;&nbsp;<input type="password" name="password" style="width:60px;"></div>
+	    	<div> &nbsp;密码：&nbsp;&nbsp;<input type="password" name="password" style="width:60px;"></div><br/>
 	    	<div><input type="submit" value="登录"></div>
 	    </form>
 	    </c:if>

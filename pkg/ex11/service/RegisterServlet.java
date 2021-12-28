@@ -30,15 +30,14 @@ public class RegisterServlet extends HttpServlet {
 			BusinessService service = new BusinessServiceImpl();
 			if(service.isRegister(username)){
 				request.setAttribute("message", "该用户名已被使用");
-				request.getRequestDispatcher("/static/message.jsp").forward(request, response);
 			}else{
 				service.registerUser(user);
 				request.setAttribute("message", "注册成功");
-				request.getRequestDispatcher("/indexservlet?method=getAll").forward(request, response);
 			}
 		}catch(Exception e){
 			e.printStackTrace();
 			request.setAttribute("message", "注册失败");
+		}finally{
 			request.getRequestDispatcher("/static/message.jsp").forward(request, response);
 		}
 	}
