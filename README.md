@@ -30,3 +30,4 @@
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
+- [ruanwenjun/JAVAWeb-Project](https://github.com/ruanwenjun/JAVAWeb-Project/tree/master/SSM%E7%AE%80%E5%8D%95%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE--CRM)
