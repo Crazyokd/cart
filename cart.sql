@@ -67,3 +67,4 @@ create table if not exists cartitem
 
 -- select book.* from cartitem,book where cartitem.book_id = book.id and user_id = 1;
 
+-- delete from cartitem where user_id = ?;
