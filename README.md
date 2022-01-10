@@ -32,6 +32,7 @@
 - [x] 修复由于优化分页查询后产生的bug
 - [ ] 使用filter处理关于购物车的请求
 - [ ] 通过监听器实现当Session被销毁时，将购物车数据写入数据库。
+- [ ] 添加邮箱验证和短信验证
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
