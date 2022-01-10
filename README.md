@@ -6,6 +6,7 @@
 - 导入并配置模板————[Crazyokd/JW_VSC-Template](##参考)
 - 执行[cart.sql](cart.sql)文件
 - 修改[JdbcUtils.java](pkg/ex11/utils/JdbcUtils.java)文件中有关数据库的配置
+- 修改[MailUtils.java](pkg/ex11/utils/MailUtils.java)文件中有关发件人邮箱的配置
 - 执行[startup_server.bat](startup_server.bat)脚本
 ## 使用到的lib
 - c3p0-0.9.5.1.jar
@@ -14,6 +15,10 @@
 - mchange-commons-java-0.2.10.jar
 - mysql-connector-java-5.1.26-bin.jar
 - standard.jar
+- mail.jar
+
+> 可前往[Crazyokd/javaweb-lib](https://github.com/Crazyokd/javaweb-lib)仓库下载所需要的lib.
+
 ## TODO
 - [x] 核查依赖倒转
 - [ ] 客户端添加书籍
@@ -30,4 +35,4 @@
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [eson15/Javaweb_bookstore](https://github.com/eson15/Javaweb_bookstore)
-- [ruanwenjun/JAVAWeb-Project](https://github.com/ruanwenjun/JAVAWeb-Project/tree/master/SSM%E7%AE%80%E5%8D%95%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE--CRM)
+- [ruanwenjun/JAVAWeb-Project](https://github.com/ruanwenjun/JAVAWeb-Project)
